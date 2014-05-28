@@ -1,4 +1,6 @@
 
+*.o
+*.out
 
-./Debug/*
-./Release/*
+Debug/*
+Release/*
