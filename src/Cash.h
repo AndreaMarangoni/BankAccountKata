@@ -1,9 +1,3 @@
-/*
- * Cash.h
- *
- *  Created on: 23 May 2014
- *      Author: andy
- */
 
 #ifndef CASH_H_
 #define CASH_H_

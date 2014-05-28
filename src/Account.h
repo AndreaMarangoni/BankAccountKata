@@ -1,9 +1,3 @@
-/*
- * Account.h
- *
- *  Created on: 23 May 2014
- *      Author: andy
- */
 
 #ifndef ACCOUNT_H_
 #define ACCOUNT_H_

@@ -1,10 +1,3 @@
-/*
- * main.cpp
- *
- *  Created on: 10 May 2014
- *      Author: andy
- */
-
 #include <gtest/gtest.h>
 
 #include "Cash.h"

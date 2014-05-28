@@ -1,9 +1,3 @@
-/*
- * InvalidDepositException.cpp
- *
- *  Created on: 28 May 2014
- *      Author: andy
- */
 
 #include "InvalidDepositException.h"
 

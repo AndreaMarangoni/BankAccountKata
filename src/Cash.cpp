@@ -1,9 +1,3 @@
-/*
- * Cash.cpp
- *
- *  Created on: 23 May 2014
- *      Author: andy
- */
 
 #include "Cash.h"
 
