@@ -1,6 +1,7 @@
 
 *.o
 *.out
-
+.project
+.cproject
 Debug/*
 Release/*
