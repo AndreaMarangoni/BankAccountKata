@@ -8,8 +8,10 @@ class Account {
 public:
 	Account(const Cash& initialAmount);
 	virtual ~Account();
-	const Cash& withdraw(const Cash& amount);
-	const Cash& deposit(const Cash& amount);
+	void withdraw(const Cash& amount);
+	void deposit(const Cash& amount);
+	bool operator==(const Account& account) const;
+	bool operator!=(const Account& account) const;
 private:
 	Cash amount_;
 };

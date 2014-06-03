@@ -11,7 +11,7 @@ Account::Account(const Cash& initialAmount) :
 Account::~Account() {
 }
 
-const Cash& Account::withdraw(const Cash& amount) {
+void Account::withdraw(const Cash& amount) {
 	if(amount < 0){
 		throw InvalidWithdrawException("Impossible to withdraw a negative amount.");
 	}
@@ -19,13 +19,19 @@ const Cash& Account::withdraw(const Cash& amount) {
 		throw InvalidWithdrawException("Impossible to withdraw from a negative balance.");
 	}
 	amount_ = amount_ - amount;
-	return amount_;
 }
 
-const Cash& Account::deposit(const Cash& amount) {
+void Account::deposit(const Cash& amount) {
 	if(amount < 0){
 		throw InvalidDepositException("Impossible to widtdraw a negative amount.");
 	}
 	amount_ = amount_ + amount;
-	return amount_;
+}
+
+bool Account::operator==(const Account& account) const{
+	return amount_ == account.amount_;
+}
+
+bool Account::operator!=(const Account& account) const{
+	return (*this != account);
 }
